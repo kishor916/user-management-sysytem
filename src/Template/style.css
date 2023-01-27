@@ -1,0 +1,30 @@
+
+.nav-items-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+
+#form {
+    margin: 10rem auto;
+    width: 25%;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group-append {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+  
+  
+
+
+
