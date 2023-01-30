@@ -9,13 +9,16 @@
 
                 <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
 
-                <form class="mx-1 mx-md-4" method="post" action="">
+           
+                <form class="mx-1 mx-md-4" method="post" action="" enctype="multipart/form-data">
+
 
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                       <input type="text" name="fname" id="form3Example1c" class="form-control" />
                       <label class="form-label" for="form3Example1c">First Name</label>
+                      
                     </div>
                   </div>
 
@@ -65,6 +68,14 @@
                     </div>
                     </div>
                   </div>
+                  <!-- <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-upload fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                    <input type="file" name="file" id="form3Example6" class="form-control">
+                    <label class="form-label" for="form3Example6">Upload Photo</label>
+                      </div>
+                  </div> -->
+
 
 
                   <div class="form-check d-flex justify-content-center mb-5">

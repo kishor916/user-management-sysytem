@@ -102,6 +102,8 @@
     <button class="btn btn-danger btn-lg ms-1" onclick="location.href='index.php?module=delete&id=<?php echo $user['id']; ?>'">Delete profile</button>
     <!-- <button class="btn btn-secondary btn-lg ms-1" onclick="location.href='index.php?module=Update<?php echo $user['id']; ?>'">Update</button> -->
     <button class="btn btn-secondary btn-lg ms-1" onclick="location.href='index.php?module=Update&id=<?php echo $user['id']; ?>'">Update</button>
+    
+    <a href='index.php?module=PictureUpload&id=<?php echo $user['id'];?> ' class="card-link">Upload image</a>
    
 
 
