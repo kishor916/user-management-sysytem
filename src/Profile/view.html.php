@@ -17,14 +17,14 @@
       <div class="col-lg-4">
         <div class="card mb-4">
           <div class="card-body text-center">
-            <img src="src/profile_pics/user.webp" alt="avatar"
-              class="rounded-circle img-fluid" style="width: 150px;">
+          <img src="src/PictureUpload/image/<?php echo $user['profile_image']; ?>" alt="avatar" class="rounded-circle img-fluid" style="width: 150px; height: 150px; object-fit: cover;">
             <h5 class="my-3">  <?php echo $user['first_name']; ?>  <?php echo $user['last_name']; ?></h5>
             <p class="text-muted mb-1"> <?php echo $user['role']; ?></p>
 
             <div class="d-flex justify-content-center mb-2">
               <button type="button" class="btn btn-primary">Follow</button>
               <button type="button" class="btn btn-outline-primary ms-1">Message</button>
+              <button type="button" class="btn btn-primary ms-1" onclick="window.location.href='index.php?module=PictureUpload&id=<?php echo $user['id'];?>'">Upload image</button>
             </div>
           </div>
         </div>
@@ -103,7 +103,8 @@
     <!-- <button class="btn btn-secondary btn-lg ms-1" onclick="location.href='index.php?module=Update<?php echo $user['id']; ?>'">Update</button> -->
     <button class="btn btn-secondary btn-lg ms-1" onclick="location.href='index.php?module=Update&id=<?php echo $user['id']; ?>'">Update</button>
     
-    <a href='index.php?module=PictureUpload&id=<?php echo $user['id'];?> ' class="card-link">Upload image</a>
+    
+
    
 
 
