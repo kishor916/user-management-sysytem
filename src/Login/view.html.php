@@ -1,3 +1,5 @@
+
+<?php echo $msg ?? ''; ?>
 <form method="POST" action="">
  <div id="form">
         <form name="form" method="POST">

@@ -20,7 +20,9 @@ class Controller
                 $data=$model->checkLogin($username, $password);
                 if (empty($data)) {
                     $msg = "Username or password not in the databse ";
-                    header('Location: index.php?module=Register');
+                    // header('Location: index.php?module=Register');
+                    $view = 'src/Register/view.html.php';
+                include 'src/Template/template.php';
 
                 }
             }
