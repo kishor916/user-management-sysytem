@@ -17,7 +17,11 @@ class Controller
                 include 'src/Template/template.php';
             } else {
                 $model = new Model();
-                $model->checkLogin($username, $password);
+                $data=$model->checkLogin($username, $password);
+                if (empty($data)) {
+                    header('Location: index.php?module=Register');
+
+                }
             }
 
         } else {
