@@ -13,22 +13,45 @@
                 <form class="mx-1 mx-md-4" method="post" action="" enctype="multipart/form-data">
 
 
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="text" name="fname" id="form3Example1c" class="form-control" />
-                      <label class="form-label" for="form3Example1c">First Name</label>
-                      
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="text" name="lname" id="form3Example1c" class="form-control" />
-                      <label class="form-label" for="form3Example1c">Last Name</label>
-                    </div>
-                  </div>
+                <div class="d-flex flex-row align-items-center mb-4">
+  <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+  <div class="form-outline flex-fill mb-0">
+    <input type="text" name="fname" id="fname" class="form-control" pattern="[a-zA-Z]+" required />
+    <label class="form-label" for="fname">First Name</label>
+    <div id="fnameError" class="error" style="display:none;">Numbers are not allowed,unless you are Elon's son</div>
+  </div>
+</div>
+<div class="d-flex flex-row align-items-center mb-4">
+  <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+  <div class="form-outline flex-fill mb-0">
+    <input type="text" name="lname" id="lname" class="form-control" pattern="[a-zA-Z]+" required />
+    <label class="form-label" for="lname">Last Name</label>
+    <div id="lnameError" class="error" style="display:none;">Numbers are not allowed, unless you are Elon's son</div>
+  </div>
+</div>
+<script>
+  const fname = document.getElementById("fname");
+  const fnameError = document.getElementById("fnameError");
+  
+  fname.addEventListener("input", function() {
+    if (!fname.validity.valid) {
+      fnameError.style.display = "block";
+    } else {
+      fnameError.style.display = "none";
+    }
+  });
+  
+  const lname = document.getElementById("lname");
+  const lnameError = document.getElementById("lnameError");
+  
+  lname.addEventListener("input", function() {
+    if (!lname.validity.valid) {
+      lnameError.style.display = "block";
+    } else {
+      lnameError.style.display = "none";
+    }
+  });
+</script>
 
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
