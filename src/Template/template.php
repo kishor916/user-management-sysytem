@@ -50,11 +50,12 @@
 
 </header>
 
+
 <?php
-if (isset($msg)) {
-    echo $msg;
-}
-include $view; 
+
+if(isset($msg)) echo $msg;
+include $view;
+
 ?>
 <footer class="bg-light text-center text-white" id="footer" style="margin-top: auto;">
   <!-- Grid container -->
